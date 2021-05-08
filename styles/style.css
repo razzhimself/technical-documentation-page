@@ -17,6 +17,9 @@ header {
 }
 
 @media only screen and (min-width: 815px) {
+  main{
+    margin-left: 449.58px;
+  }
   #navbar {
     display: flex;
     flex-direction: column;
