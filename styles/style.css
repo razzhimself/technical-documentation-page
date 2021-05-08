@@ -1,7 +1,13 @@
 /* style with mobile first then create a media query for larger size screens */
 
+
 @media only screen and (min-width: 815px) {
   #navbar {
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content;
+    background-color: #FFFFFF;
+    border-right: 5px rgb(153, 161, 161) solid;    
     position: fixed;
     left: 0;
   }
