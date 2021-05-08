@@ -1,5 +1,9 @@
 /* style with mobile first then create a media query for larger size screens */
 
+header{
+  font-size: 25px;
+  font-weight:600;
+}
 
 @media only screen and (min-width: 815px) {
   #navbar {
