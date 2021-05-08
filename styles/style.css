@@ -1,8 +1,16 @@
 /* style with mobile first then create a media query for larger size screens */
 
-header{
-  font-size: 25px;
-  font-weight:600;
+header {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.nav-link {
+  border-top: 1px rgb(153, 161, 161) solid;
+  
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
 }
 
 @media only screen and (min-width: 815px) {
@@ -10,8 +18,8 @@ header{
     display: flex;
     flex-direction: column;
     max-width: fit-content;
-    background-color: #FFFFFF;
-    border-right: 5px rgb(153, 161, 161) solid;    
+    background-color: #ffffff;
+    border-right: 3.5px rgb(153, 161, 161) solid;
     position: fixed;
     left: 0;
   }
