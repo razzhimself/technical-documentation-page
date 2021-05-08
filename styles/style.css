@@ -3,6 +3,8 @@
 header {
   font-size: 30px;
   font-weight: 500;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .nav-link {
