@@ -1,25 +1,66 @@
 /* style with mobile first then create a media query for larger size screens */
 
+* {
+  color: #4d4e53;
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: 1.5;
+}
 header {
   font-size: 30px;
   font-weight: 500;
   padding-top: 20px;
   padding-bottom: 20px;
+  color: black;
+}
+
+#navbar header {
+  text-align: center;
+}
+
+#navbar ul {
+  list-style-type: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 0;
+}
+
+#navbar ul li {
+  padding-left: 25px;
+  font-family: sans-serif;
 }
 
 .nav-link {
-  border-top: 1px rgb(153, 161, 161) solid;
-  
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 15px;
   text-decoration: none;
 }
 
-@media only screen and (min-width: 815px) {
-  main{
-    margin-left: 449.58px;
+@media only screen and (max-width: 815px) {
+  #navbar ul {
+    height: 101px;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    border-top: 3px black solid;
+    border-bottom: 3px black solid;
+    border-right: 0.5px black solid;
+    border-left: 0.5px black solid;
   }
+
+  #navbar ul li {
+    border-bottom: 0.5px black solid;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  #navbar ul li:last-child {
+    border: none;
+  }
+}
+
+@media only screen and (min-width: 815px) {
+  main {
+    margin-left: 360px;
+  }
+
   #navbar {
     display: flex;
     flex-direction: column;
@@ -29,11 +70,15 @@ header {
     position: fixed;
     left: 0;
     min-height: 100vh;
-
   }
 
-  #main-doc{
-    
+  #navbar header {
+    padding: 25px;
+  }
 
+  #navbar ul li {
+    border-top: 0.5px black solid;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 }
