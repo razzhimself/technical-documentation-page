@@ -12,8 +12,8 @@
       <header>CSS Documenation</header>
       <ul>
         <li><a class="nav-link" href="#topic_1">CSS Introduction</a></li>
-        <li><a class="nav-link" href="#topic_2">topic 2</a></li>
-        <li><a class="nav-link" href="#topic_3">topic 3</a></li>
+        <li><a class="nav-link" href="#topic_2">CSS Syntax</a></li>
+        <li><a class="nav-link" href="#topic_3">CSS Selectors</a></li>
         <li><a class="nav-link" href="#topic_4">topic 4</a></li>
         <li><a class="nav-link" href="#topic_5">topic 5</a></li>
       </ul>
@@ -46,80 +46,236 @@
         <pre>
           <code>
 body {
-background-color: lightblue;
+ background-color: lightblue;
 }
 h1 {
-color: white;
-text-align: center;
+ color: white;
+ text-align: center;
 }
 p{
-font-family: verdana;
-font-size: 20px;
+ font-family: verdana;
+ font-size: 20px;
 }
 </code></pre>
-        
 
         <h3>CSS Solved a Big Problem</h3>
-        <p>HTML was NEVER intended to contain tags for formatting a web page!
-
-          HTML was created to describe the content of a web page, like:<br>
+        <p>
+          HTML was NEVER intended to contain tags for formatting a web page!
+          HTML was created to describe the content of a web page, like:<br />
           <code>
-            &lt;h1&gt;This is a heading&lt;/h1&gt;<br>          
-            <br>&lt;p&gt;This is a paragraph.&lt;/p&gt;
-          </code> <br>
-          
-          
-          When tags like <code>&lt;font&gt;</code>, and color attributes were added to the HTML 3.2 specification, it started a nightmare for web developers. Development of large websites, where fonts and color information were added to every single page, became a long and expensive process.
-          
-          To solve this problem, the World Wide Web Consortium (W3C) created CSS.
-          
-          CSS removed the style formatting from the HTML page!</p>
-          <h3>CSS Saves a Lot of Work!</h3>
-          <p>The style definitions are normally saved in external .css files.
+            &lt;h1&gt;This is a heading&lt;/h1&gt;<br />
+            <br />&lt;p&gt;This is a paragraph.&lt;/p&gt;
+          </code>
+          <br />
 
-            With an external stylesheet file, you can change the look of an entire website by changing just one file!</p>
+          When tags like <code>&lt;font&gt;</code>, and color attributes were
+          added to the HTML 3.2 specification, it started a nightmare for web
+          developers. Development of large websites, where fonts and color
+          information were added to every single page, became a long and
+          expensive process. To solve this problem, the World Wide Web
+          Consortium (W3C) created CSS. CSS removed the style formatting from
+          the HTML page!
+        </p>
+        <h3>CSS Saves a Lot of Work!</h3>
+        <p>
+          The style definitions are normally saved in external .css files. With
+          an external stylesheet file, you can change the look of an entire
+          website by changing just one file!
+        </p>
       </section>
       <section id="topic_2" class="main-section">
-        <header>topic 2</header>
+        <header>CSS Syntax</header>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora,
-          iste excepturi molestias sed fugit, numquam ratione laboriosam
-          quisquam repellat eligendi temporibus error enim voluptatibus quod
-          nesciunt doloribus, explicabo ad porro.
+          A CSS rule consists of a selector and a declaration block..
         </p>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora,
-          iste excepturi molestias sed fugit, numquam ratione laboriosam
-          quisquam repellat eligendi temporibus error enim voluptatibus quod
-          nesciunt doloribus, explicabo ad porro.
+        <img src="https://www.w3schools.com/css/img_selector.gif" alt="CSS Syntax Form">
+        <pre><p>
+          The selector points to the HTML element you want to style.
+
+          The declaration block contains one or more declarations separated by semicolons.
+          
+          Each declaration includes a CSS property name and a value, separated by a colon.
+          
+          Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces.</pre>
         </p>
-        <code>code_element_2</code>
+        <h4>Example</h4>
+        <p>In this example all &lt;p&gt; elements will be center-aligned, with a red text color:<br/><br/></p>
+<pre>
+<code>p {
+  color: red;
+  text-align: center;
+  }</code>
+</pre>
+<h4>Example Explained
+</h4>
         <ul>
-          <li>bullet #1</li>
-          <li>bullet #2</li>
-          <li>bullet #3</li>
+          <li><code>p</code> is a selector in CSS (it points to the HTML element you want to style: &lt;p&gt;).</li>
+          <li><code>color</code> is a property, and <code>red</code> is the property value</li>
+          <li><code>text-align</code> is a property, and <code>center</code> is the property value</li>
         </ul>
+
       </section>
       <section id="topic_3" class="main-section">
-        <header>topic 3</header>
+        <header>CSS Selectors
+</header>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora,
-          iste excepturi molestias sed fugit, numquam ratione laboriosam
-          quisquam repellat eligendi temporibus error enim voluptatibus quod
-          nesciunt doloribus, explicabo ad porro.
+          A CSS selector selects the HTML element(s) you want to style.
         </p>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora,
-          iste excepturi molestias sed fugit, numquam ratione laboriosam
-          quisquam repellat eligendi temporibus error enim voluptatibus quod
-          nesciunt doloribus, explicabo ad porro.
+        <h3>CSS Selectors
+        </h3>
+        <pre><p>
+CSS selectors are used to "find" (or select) the HTML elements you want to style.
+
+We can divide CSS selectors into five categories:</pre>
         </p>
-        <code>code_element_3</code>
+
         <ul>
-          <li>bullet #1</li>
-          <li>bullet #2</li>
-          <li>bullet #3</li>
+          <li>Simple selectors (select elements based on name, id, class)</li>
+          <li>Combinator selectors (select elements based on a specific relationship between them)</li>
+          <li>Pseudo-class selectors (select elements based on a certain state)</li>
+          <li>Pseudo-elements selectors (select and style a part of an element)</li>
+          <li>Attribute selectors (select elements based on an attribute or attribute value)</li>
+        
         </ul>
+        <p>
+          This section will explain the most basic CSS selectors.
+        </p>
+        <h3>The CSS element Selector
+        </h3>
+        <p>
+        The element selector selects HTML elements based on the element name.
+        </p>
+        <h4>Example</h4>
+        <p>Here, all &lt;p&gt; elements on the page will be center-aligned, with a red text color:</p>
+<pre>
+<code>p {
+  color: red;
+  text-align: center;
+}</code>
+</pre>
+
+       <h3>The CSS id Selector
+      </h3>
+      <pre><p>
+The id selector uses the id attribute of an HTML element to select a specific element.
+
+The id of an element is unique within a page, so the id selector is used to select one unique element!
+
+To select an element with a specific id, write a hash (#) character, followed by the id of the element.
+      </p>
+      </pre>
+      <h4>Example</h4>
+        <p>The CSS rule below will be applied to the HTML element with id=&quot;para1&quot;:</p>
+<pre>
+<code>#para1 {
+ text-align: center;
+ color: red;
+}</code>
+</pre>
+<p>Note: An id name cannot start with a number!
+</p>
+
+<h3>The CSS class Selector</h3>
+<pre><p>
+The class selector selects HTML elements with a specific class attribute.
+
+To select elements with a specific class, write a period (.) character, followed by the class name.
+</p>
+</pre>
+
+<h4>Example</h4>
+        <p>In this example all HTML elements with class=&quot;center&quot; will be red and center-aligned:</p>
+<pre>
+<code>.center {
+ text-align: center;
+ color: red;
+}
+</code>
+</pre>
+<p>You can also specify that only specific HTML elements should be affected by a class.
+</p>
+<h4>Example</h4>
+        <p>In this example only &lt;p&gt; elements with class=&quot;center&quot; will be red and center-aligned:</p>
+<pre>
+<code>p.center {
+ text-align: center;
+ color: red;
+}
+</code>
+</pre>
+<p>HTML elements can also refer to more than one class.
+</p>
+<h4>Example</h4>
+        <p>In this example the &lt;p&gt; element will be styled according to class=&quot;center&quot; and to class=&quot;large&quot;:</p>
+<pre>
+<code>&lt;p class=&quot;center large&quot;&gt;This paragraph refers to two classes.&lt;/p&gt;
+</code>
+</pre>
+<p>Note: A class name cannot start with a number!
+</p>
+
+<h3>The CSS Universal Selector</h3>
+<p>The universal selector (*) selects all HTML elements on the page.
+
+</p>
+<h4>Example</h4>
+        <p>The CSS rule below will affect every HTML element on the page: </p>
+<pre>
+<code>* {
+ text-align: center;
+ color: blue;
+}
+</code>
+</pre>
+
+<h3>The CSS Grouping Selector
+</h3>
+<pre><p>
+The grouping selector selects all the HTML elements with the same style definitions.
+
+Look at the following CSS code (the h1, h2, and p elements have the same style definitions):
+</p>
+</pre>
+<pre><code>
+h1 {
+  text-align: center;
+  color: red;
+}
+  
+h2 {
+  text-align: center;
+  color: red;
+}
+  
+p {
+  text-align: center;
+  color: red;
+}
+</code>
+</pre>
+<pre><p>
+It will be better to group the selectors, to minimize the code.
+
+To group selectors, separate each selector with a comma.
+</p>
+</pre>
+<h4>Example</h4>
+        <p>IIn this example we have grouped the selectors from the code above: 
+
+        </p>
+<pre>
+<code>h1, h2, p {
+  text-align: center;
+  color: red;
+}
+</code>
+</pre>
+
+
+
+
+        
+
       </section>
       <section id="topic_4" class="main-section">
         <header>topic 4</header>
