@@ -15,7 +15,10 @@
         <li><a class="nav-link" href="#topic_2">CSS Syntax</a></li>
         <li><a class="nav-link" href="#topic_3">CSS Selectors</a></li>
         <li><a class="nav-link" href="#topic_4">How To Add CSS</a></li>
-        <li><a class="nav-link" href="#topic_5">topic 5</a></li>
+        <li><a class="nav-link" href="#topic_5">CSS Comments
+        </a></li>
+        <li><a class="nav-link" href="#topic_6">Reference
+        </a></li>
       </ul>
     </nav>
     <main id="main-doc">
@@ -424,28 +427,60 @@ All the styles in a page will "cascade" into a new "virtual" style sheet by the 
 
 
 
+
+
       </section>
       <section id="topic_5" class="main-section">
-        <header>topic 5</header>
+        <header>CSS Comments
+        </header>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora,
-          iste excepturi molestias sed fugit, numquam ratione laboriosam
-          quisquam repellat eligendi temporibus error enim voluptatibus quod
-          nesciunt doloribus, explicabo ad porro.
+          CSS comments are not displayed in the browser, but they can help document your source code.
         </p>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora,
-          iste excepturi molestias sed fugit, numquam ratione laboriosam
-          quisquam repellat eligendi temporibus error enim voluptatibus quod
-          nesciunt doloribus, explicabo ad porro.
+        <h3>CSS Comments
+        </h3>
+        <pre><p>
+        Comments are used to explain the code, and may help when you edit the source code at a later date.
+
+        Comments are ignored by browsers.
+          
+        A CSS comment is placed inside the <code>&lt;style&gt;</code> element, and starts with <code>/*</code> and ends with <code>*/</code>:
         </p>
-        <code>code_element_5</code>
-        <ul>
-          <li>bullet #1</li>
-          <li>bullet #2</li>
-          <li>bullet #3</li>
-        </ul>
+      </pre>
+
+      <h4>Example</h4>
+      <pre><code>
+/* This is a single-line comment */
+p {
+  color: red;
+}
+      </code></pre>
+
+    
+      <p>You can add comments wherever you want in the code:
+      </p>
+      <h4>Example</h4>
+      <pre><code>
+        p {
+          color: red;  /* Set text color to red */
+        }
+      </code></pre>
+      <p>Comments can also span multiple lines: 
+      </p>
+      <h4>Example</h4> 
+      <pre><code>
+/* This is
+a multi-line
+comment */
+
+p {
+  color: red;
+}
+      </code></pre>
       </section>
+
+
+
+
     </main>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
