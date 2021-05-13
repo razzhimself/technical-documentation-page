@@ -281,23 +281,149 @@ To group selectors, separate each selector with a comma.
         <header>How To Add CSS
         </header>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora,
-          iste excepturi molestias sed fugit, numquam ratione laboriosam
-          quisquam repellat eligendi temporibus error enim voluptatibus quod
-          nesciunt doloribus, explicabo ad porro.
+          When a browser reads a style sheet, it will format the HTML document according to the information in the style sheet.
         </p>
+        <h3>Three Ways to Insert CSS
+        </h3>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora,
-          iste excepturi molestias sed fugit, numquam ratione laboriosam
-          quisquam repellat eligendi temporibus error enim voluptatibus quod
-          nesciunt doloribus, explicabo ad porro.
+          There are three ways of inserting a style sheet:
         </p>
-        <code>code_element_4</code>
         <ul>
-          <li>bullet #1</li>
-          <li>bullet #2</li>
-          <li>bullet #3</li>
+          <li>External CSS
+          </li>
+          <li>Internal CSS
+          </li>
+          <li>Inline CSS
+          </li>
         </ul>
+
+        <h3>External CSS
+        </h3>
+        <pre><p>
+With an external style sheet, you can change the look of an entire website by changing just one file!
+
+Each HTML page must include a reference to the external style sheet file inside the &lt;link&gt; element, inside the head section.
+        </p>
+        </pre>
+        
+        <h4>Example</h4>
+        <p>External styles are defined within the &lt;link&gt; element, inside the &lt;head&gt; section of an HTML page: 
+        </p>
+<pre>
+<code>&lt;!DOCTYPE html&gt;<br/>&lt;html&gt;<br/>&lt;head&gt;<br/>&lt;link rel=&quot;stylesheet&quot; href=&quot;mystyle.css&quot;&gt;<br/>&lt;/head&gt;<br/>&lt;body&gt;<br/><br/>&lt;h1&gt;This is a heading&lt;/h1&gt;<br/>&lt;p&gt;This is a paragraph.&lt;/p&gt;<br/><br/>&lt;/body&gt;<br/>&lt;/html&gt;
+</code>
+</pre>
+
+<pre><p>
+An external style sheet can be written in any text editor, and must be saved with a .css extension.
+
+The external .css file should not contain any HTML tags.
+
+Here is how the "mystyle.css" file looks:
+</p>
+<h4>"mystyle.css"</h4>
+<pre><code>
+  body {
+    background-color: lightblue;
+  }
+  
+  h1 {
+    color: navy;
+    margin-left: 20px;
+  }
+</code></pre>
+</pre>
+
+<p>Note: Do not add a space between the property value and the unit (such as margin-left: 20 px;). The correct way is: margin-left: 20px;
+</p>
+
+<h3>Internal CSS
+</h3>
+
+<pre><p>
+An internal style sheet may be used if one single HTML page has a unique style.
+
+The internal style is defined inside the &lt;style&gt; element, inside the head section.
+</p></pre>
+
+<h4>Example</h4>
+<p>Internal styles are defined within the &lt;style&gt; element, inside the &lt;head&gt; section of an HTML page:
+</p>
+
+<pre><code>
+  &lt;!DOCTYPE html&gt;<br/>&lt;html&gt;<br/>&lt;head&gt;<br/>&lt;style&gt;<br/>body {<br/>  background-color: linen;<br/>}<br/><br/>h1 {<br/>  color: maroon;<br/>  margin-left: 40px;<br/>}<br/>&lt;/style&gt;<br/>&lt;/head&gt;<br/>&lt;body&gt;<br/><br/>&lt;h1&gt;This is a heading&lt;/h1&gt;<br/>&lt;p&gt;This is a paragraph.&lt;/p&gt;<br/><br/>&lt;/body&gt;<br/>&lt;/html&gt;
+</code></pre>
+
+<h3>Inline CSS
+</h3>
+
+<pre><p>
+An inline style may be used to apply a unique style for a single element.
+
+To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property.
+</p></pre>
+
+<h4>Example</h4>
+<p>Inline styles are defined within the "style" attribute of the relevant element:
+</p>
+
+<pre><code>
+  &lt;!DOCTYPE html&gt;<br/>&lt;html&gt;<br/>&lt;body&gt;<br/><br/>&lt;h1 style=&quot;color:blue;text-align:center;&quot;&gt;This is a heading&lt;/h1&gt;<br/>&lt;p style=&quot;color:red;&quot;&gt;This is a paragraph.&lt;/p&gt;<br/><br/>&lt;/body&gt;<br/>&lt;/html&gt;
+</code></pre>
+
+<p>Tip: An inline style loses many of the advantages of a style sheet (by mixing content with presentation). Use this method sparingly.
+</p>
+
+<h3>Multiple Style Sheets
+</h3>
+
+<p>If some properties have been defined for the same selector (element) in different style sheets, the value from the last read style sheet will be used. 
+</p>
+
+<p>Assume that an external style sheet has the following style for the &lt;h1&gt; element:<br/><br/></p>
+<pre><code>h1 {
+  color: navy;
+}</code></pre>
+<p>Then, assume that an internal style sheet also has the following style for the &lt;h1&gt; element:<br/><br/></p>
+<pre><code>h1 {
+  color: orange;   
+}</code></pre>
+<h4>Example</h4>
+<p>If the internal style is defined after the link to the external style sheet, the &lt;h1&gt; elements will be &quot;orange&quot;:<br/><br/></p>
+<pre><code>&lt;head&gt;<br/>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;mystyle.css&quot;&gt;<br/>&lt;style&gt;<br/>h1 {<br/>  color: orange;<br/>}<br/>&lt;/style&gt;<br/>&lt;/head&gt;</code></pre>
+    
+<h4>Example</h4>
+<p>However, if the internal style is defined before the link to the external style sheet, the &lt;h1&gt; elements will be &quot;navy&quot;: <br/><br/></p>
+<pre><code>&lt;head&gt;<br/>&lt;style&gt;<br/>h1 {<br/>  color: orange;<br/>}<br/>&lt;/style&gt;<br/>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;mystyle.css&quot;&gt;<br/>&lt;/head&gt;</code></pre>
+
+
+<h3>Cascading Order
+</h3>
+
+<pre><p>
+What style will be used when there is more than one style specified for an HTML element?
+
+All the styles in a page will "cascade" into a new "virtual" style sheet by the following rules, where number one has the highest priority:
+</p></pre>
+
+<ul>
+  <li>Inline style (inside an HTML element)
+  </li>
+  <li>Inline style (inside an HTML element)
+  </li>
+  <li>Browser default
+  </li>
+</ul>
+
+<p>So, an inline style has the highest priority, and will override external and internal styles and browser defaults.
+</p>
+
+
+
+
+
+
+
       </section>
       <section id="topic_5" class="main-section">
         <header>topic 5</header>
