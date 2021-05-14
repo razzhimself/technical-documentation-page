@@ -17,7 +17,9 @@
         <li><a class="nav-link" href="#topic_4">How To Add CSS</a></li>
         <li><a class="nav-link" href="#topic_5">CSS Comments
         </a></li>
-        <li><a class="nav-link" href="#topic_6">Reference
+        <li><a class="nav-link" href="#topic_6">CSS Colors
+        </a></li>
+        <li><a class="nav-link" href="#topic_7">Reference
         </a></li>
       </ul>
     </nav>
@@ -354,7 +356,7 @@ The internal style is defined inside the &lt;style&gt; element, inside the head 
 </p>
 
 <pre><code>
-  &lt;!DOCTYPE html&gt;<br/>&lt;html&gt;<br/>&lt;head&gt;<br/>&lt;style&gt;<br/>body {<br/>  background-color: linen;<br/>}<br/><br/>h1 {<br/>  color: maroon;<br/>  margin-left: 40px;<br/>}<br/>&lt;/style&gt;<br/>&lt;/head&gt;<br/>&lt;body&gt;<br/><br/>&lt;h1&gt;This is a heading&lt;/h1&gt;<br/>&lt;p&gt;This is a paragraph.&lt;/p&gt;<br/><br/>&lt;/body&gt;<br/>&lt;/html&gt;
+&lt;!DOCTYPE html&gt;<br/>&lt;html&gt;<br/>&lt;head&gt;<br/>&lt;style&gt;<br/>body {<br/>  background-color: linen;<br/>}<br/><br/>h1 {<br/>  color: maroon;<br/>  margin-left: 40px;<br/>}<br/>&lt;/style&gt;<br/>&lt;/head&gt;<br/>&lt;body&gt;<br/><br/>&lt;h1&gt;This is a heading&lt;/h1&gt;<br/>&lt;p&gt;This is a paragraph.&lt;/p&gt;<br/><br/>&lt;/body&gt;<br/>&lt;/html&gt;
 </code></pre>
 
 <h3>Inline CSS
@@ -371,7 +373,7 @@ To use inline styles, add the style attribute to the relevant element. The style
 </p>
 
 <pre><code>
-  &lt;!DOCTYPE html&gt;<br/>&lt;html&gt;<br/>&lt;body&gt;<br/><br/>&lt;h1 style=&quot;color:blue;text-align:center;&quot;&gt;This is a heading&lt;/h1&gt;<br/>&lt;p style=&quot;color:red;&quot;&gt;This is a paragraph.&lt;/p&gt;<br/><br/>&lt;/body&gt;<br/>&lt;/html&gt;
+&lt;!DOCTYPE html&gt;<br/>&lt;html&gt;<br/>&lt;body&gt;<br/><br/>&lt;h1 style=&quot;color:blue;text-align:center;&quot;&gt;This is a heading&lt;/h1&gt;<br/>&lt;p style=&quot;color:red;&quot;&gt;This is a paragraph.&lt;/p&gt;<br/><br/>&lt;/body&gt;<br/>&lt;/html&gt;
 </code></pre>
 
 <p>Tip: An inline style loses many of the advantages of a style sheet (by mixing content with presentation). Use this method sparingly.
@@ -452,18 +454,16 @@ All the styles in a page will "cascade" into a new "virtual" style sheet by the 
 /* This is a single-line comment */
 p {
   color: red;
-}
-      </code></pre>
+}</code></pre>
 
     
       <p>You can add comments wherever you want in the code:
       </p>
       <h4>Example</h4>
       <pre><code>
-        p {
-          color: red;  /* Set text color to red */
-        }
-      </code></pre>
+p {
+color: red;  /* Set text color to red */
+}</code></pre>
       <p>Comments can also span multiple lines: 
       </p>
       <h4>Example</h4> 
@@ -474,15 +474,111 @@ comment */
 
 p {
   color: red;
-}
-      </code></pre>
+}</code></pre>
       </section>
 
-      <section>
+      <section id="topic_6" class="main-section">
+        <header>CSS Colors
+        </header>
+        <p>Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.
+        </p>
+        <h3>CSS Color Names
+        </h3>
+        <p>In CSS, a color can be specified by using a predefined color name:
+        </p>
+
+        <h1 style="background-color:Tomato;">Tomato</h1>
+<h1 style="background-color:Orange;">Orange</h1>
+<h1 style="background-color:DodgerBlue;">DodgerBlue</h1>
+<h1 style="background-color:MediumSeaGreen;">MediumSeaGreen</h1>
+<h1 style="background-color:Gray;">Gray</h1>
+<h1 style="background-color:SlateBlue;">SlateBlue</h1>
+<h1 style="background-color:Violet;">Violet</h1>
+<h1 style="background-color:LightGray;">LightGray</h1>
+
+<p>CSS/HTML support 140 standard color names.
+</p>
+
+<h3>CSS Background Color
+</h3>
+<p>You can set the background color for HTML elements:
+</p>
+
+<h1 style="background-color:DodgerBlue;">Hello World</h1>
+
+<p style="background-color:Tomato;">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+</p>
+
+<h4>Example</h4>
+<pre><code>
+&lt;h1 style=&quot;background-color:DodgerBlue;&quot;&gt;Hello World&lt;/h1&gt;<br/>&lt;p style=&quot;background-color:Tomato;&quot;&gt;Lorem ipsum...&lt;/p&gt;
+</code></pre>
+
+<h3>CSS Text Color
+</h3>
+<p>You can set the color of text:
+</p>
+
+<h3 style="color:Tomato;">Hello World</h3>
+
+<p style="color:DodgerBlue;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+
+<p style="color:MediumSeaGreen;">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+
+<h4>Example</h4>
+<code>
+  &lt;h1 style=&quot;color:Tomato;&quot;&gt;Hello World&lt;/h1&gt;<br/>&lt;p style=&quot;color:DodgerBlue;&quot;&gt;Lorem ipsum...&lt;/p&gt;<br/>&lt;p style=&quot;color:MediumSeaGreen;&quot;&gt;Ut wisi enim...&lt;/p&gt;
+</code>
+
+<h3>CSS Border Color
+</h3>
+
+<p>You can set the color of borders:
+</p>
+
+<h1 style="border: 2px solid Tomato;">Hello World</h1>
+
+<h1 style="border: 2px solid DodgerBlue;">Hello World</h1>
+
+<h1 style="border: 2px solid Violet;">Hello World</h1>
+
+<h4>Example</h4>
+<code>
+  &lt;h1 style=&quot;border:2px solid Tomato;&quot;&gt;Hello World&lt;/h1&gt;<br/>&lt;h1 style=&quot;border:2px solid DodgerBlue;&quot;&gt;Hello World&lt;/h1&gt;<br/>&lt;h1 style=&quot;border:2px solid Violet;&quot;&gt;Hello World&lt;/h1&gt;
+</code>
+
+<h3>CSS Color Values
+</h3>
+<pre><p>
+In CSS, colors can also be specified using RGB values, HEX values, HSL values, RGBA values, and HSLA values:
+
+Same as color name "Tomato":
+</p></pre>
+
+<h1 style="background-color:rgb(255, 99, 71);">rgb(255, 99, 71)</h1>
+<h1 style="background-color:#ff6347;">#ff6347</h1>
+<h1 style="background-color:hsl(9, 100%, 64%);">hsl(9, 100%, 64%)</h1>
+
+<p>Same as color name "Tomato", but 50% transparent:</p>
+<h1 style="background-color:rgba(255, 99, 71, 0.5);">rgba(255, 99, 71, 0.5)</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.5);">hsla(9, 100%, 64%, 0.5)</h1>
+
+<p>In addition to the predefined color names, colors can be specified using RGB, HEX, HSL, or even transparent colors using RGBA or HSLA color values.</p>
+
+<h4>Example</h4>
+<code>
+  &lt;h1 style=&quot;background-color:rgb(255, 99, 71);&quot;&gt;...&lt;/h1&gt;<br/>&lt;h1 style=&quot;background-color:#ff6347;&quot;&gt;...&lt;/h1&gt;<br/>&lt;h1 style=&quot;background-color:hsl(9, 100%, 64%);&quot;&gt;...&lt;/h1&gt;<br/><br/>&lt;h1 style=&quot;background-color:rgba(255, 99, 71, 0.5);&quot;&gt;...&lt;/h1&gt;<br/>&lt;h1 style=&quot;background-color:hsla(9, 100%, 64%, 0.5);&quot;&gt;...&lt;/h1&gt;
+</code>
+      </section>
+
+      <!-- add ID to the reference section , topic_#-->
+      <section   class="main-section">
         <header>Reference
         </header>
         <ul>
-          <li>All the documentation in this page is taken from <a href="https://www.w3schools.com/css/default.asp">w3schools </a>>
+          <li>All the documentation in this page is taken from <a href="https://www.w3schools.com/css/default.asp">w3schools </a>
           </li>
         </ul>
       </section>
