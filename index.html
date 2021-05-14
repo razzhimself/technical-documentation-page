@@ -19,7 +19,11 @@
         </a></li>
         <li><a class="nav-link" href="#topic_6">CSS Colors
         </a></li>
-        <li><a class="nav-link" href="#topic_7">Reference
+        <li><a class="nav-link" href="#topic_7">CSS Backgrounds
+        </a></li>
+        <li><a class="nav-link" href="#topic_8">CSS Borders
+        </a></li>
+        <li><a class="nav-link" href="#topic_9">Reference
         </a></li>
       </ul>
     </nav>
@@ -571,6 +575,89 @@ Same as color name "Tomato":
 <code>
   &lt;h1 style=&quot;background-color:rgb(255, 99, 71);&quot;&gt;...&lt;/h1&gt;<br/>&lt;h1 style=&quot;background-color:#ff6347;&quot;&gt;...&lt;/h1&gt;<br/>&lt;h1 style=&quot;background-color:hsl(9, 100%, 64%);&quot;&gt;...&lt;/h1&gt;<br/><br/>&lt;h1 style=&quot;background-color:rgba(255, 99, 71, 0.5);&quot;&gt;...&lt;/h1&gt;<br/>&lt;h1 style=&quot;background-color:hsla(9, 100%, 64%, 0.5);&quot;&gt;...&lt;/h1&gt;
 </code>
+      </section>
+
+      <section id="topic_7" class="main-section">
+<header>CSS Backgrounds
+</header>
+
+<p>The CSS background properties are used to add background effects for elements.
+</p>
+
+<h3>CSS background-color
+</h3>
+
+<p>The <code>background-color</code> property specifies the background color of an element.
+</p>
+
+<h4>Example</h4>
+<p>The background color of a page is set like this:
+
+</p>
+<pre><code>
+body {
+  background-color: lightblue;
+}
+</code></pre>
+<p>With CSS, a color is most often specified by:</p>
+<ul>
+  <li>a valid color name - like "red"
+  </li>
+  <li>a HEX value - like "#ff0000"
+  </li>
+  <li>an RGB value - like "rgb(255,0,0)"
+  </li>
+</ul>
+
+<h3>CSS background-image
+</h3>
+
+<pre><p>
+The <code>background-image</code> property specifies an image to use as the background of an element.
+
+By default, the image is repeated so it covers the entire element.
+</p></pre>
+
+<h4>Example</h4>
+<p>Set the background image for a page: 
+</p>
+<pre><code>
+body {
+  background-image: url("paper.gif");
+}
+</code></pre>
+
+<p>The background image can also be set for specific elements, like the <p> element:
+
+</p>
+<h3>Example</h3>
+<pre>
+<code>p {
+  background-image: url("paper.gif");
+}
+</code></pre>
+
+<section id="topic_8" class="main-section">
+  <header>
+    CSS Borders
+  </header>
+  <p>The CSS border properties allow you to specify the style, width, and color of an element's border.
+  </p>
+  <h3>CSS Border Style
+  </h3>
+<pre>
+  <p>The <code>border-style</code> property specifies what kind of border to display.
+    The following values are allowed:
+  </p>
+</pre>
+ 
+
+</section>
+
+
+
+
+
       </section>
 
       <!-- add ID to the reference section , topic_#-->
