@@ -23,7 +23,9 @@
         </a></li>
         <li><a class="nav-link" href="#topic_8">CSS Borders
         </a></li>
-        <li><a class="nav-link" href="#topic_9">Reference
+        <li><a class="nav-link" href="#topic_9">CSS Margins
+        </a></li>
+        <li><a class="nav-link" href="#topic_10">Reference
         </a></li>
       </ul>
     </nav>
@@ -637,6 +639,8 @@ body {
 }
 </code></pre>
 
+</section>
+
 <section id="topic_8" class="main-section">
   <header>
     CSS Borders
@@ -649,16 +653,209 @@ body {
   <p>The <code>border-style</code> property specifies what kind of border to display.
     The following values are allowed:
   </p>
+  <ul>
+    <li><code>dotted</code>- Defines a dotted border</li>
+    <li><code>dashed</code>- Defines a dashed border</li>
+    <li><code>solid</code>- Defines a solid border</li>
+    <li><code>double</code>- Defines a double border</li>
+    <li><code>groove</code>- Defines a 3D grooved border. The effect depends on the border-color value</li>
+    <li><code>ridge</code> - Defines a 3D ridged border. The effect depends on the border-color value</li>
+    <li><code>inset</code>- Defines a 3D inset border. The effect depends on the border-color value</li>
+    <li><code>outset</code>- Defines a 3D outset border. The effect depends on the border-color value</li>
+    <li><code>none</code> - Defines no border</li>
+    <li><code>hidden</code> - Defines a hidden border</li>
+
+    <p>The <code>border-style</code> property can have from one to four values (for the top border, right border, bottom border, and the left border).
+
+    </p>
+
+    <h4>Example</h4>
+    <p>Demonstration of the different border styles:
+    </p>
+
+    <pre><code>p.dotted {border-style: dotted;}
+p.dashed {border-style: dashed;}
+p.solid {border-style: solid;}
+p.double {border-style: double;}
+p.groove {border-style: groove;}
+p.ridge {border-style: ridge;}
+p.inset {border-style: inset;}
+p.outset {border-style: outset;}
+p.none {border-style: none;}
+p.hidden {border-style: hidden;}
+p.mix {border-style: dotted dashed solid double;}
+</code></pre>
+
+<p>Result:
+</p>
+<p style="border-style: dotted;">A dotted border.</p>
+<p style="border-style: dashed;">A dashed border.</p>
+<p style="border-style: solid;">A solid border.</p>
+<p style="border-style: double;">A double border.</p>
+<p style="border-style: groove;">A groove border.</p>
+<p style="border-style: ridge;">A ridge border.</p>
+<p style="border-style: inset;">An inset border.</p>
+<p style="border-style: outset;">An outset border.</p>
+<p style="border-style: none;">No border.</p>
+<p style="border-style: hidden;">A hidden border.</p>
+<p style="border-style: dotted dashed solid double;">A mixed border.</p>
+  </ul>
 </pre>
- 
+
+<h3>CSS Border Width
+</h3>
+
+<pre><p>The <code>border-width</code> property specifies the width of the four borders.
+
+The width can be set as a specific size (in px, pt, cm, em, etc) or by using one of the three pre-defined values: thin, medium, or thick:
+</p><pre>
+
+  <h4>Example</h4>
+  <p>Demonstration of the different border widths:
+  </p>
+  <pre><code>p.one {
+border-style: solid;
+border-width: 5px;
+}
+  
+p.two {
+border-style: solid;
+border-width: medium;
+}
+  
+p.three {
+border-style: dotted;
+border-width: 2px;
+}
+  
+  p.four {
+border-style: dotted;
+border-width: thick;
+}</code></pre>
+ <p>Result:
+</p>
+
+<p style="border-style: solid; border-width: 5px;">Some text.</p>
+<p style="border-style: solid; border-width: medium;">Some text.</p>
+<p style="border-style: dotted; border-width: 2px;">Some text.</p>
+<p style="border-style: dotted; border-width: thick;">Some text.</p>
+<p style="border-style: double; border-width: 15px;">Some text.</p>
+<p style="border-style: double; border-width: thick;">Some text.</p>
+
+<h3>Specific Side Widths
+</h3>
+
+<p>The <code>border-width</code> property can have from one to four values (for the top border, right border, bottom border, and the left border):
+</p>
+
+<h4>Example</h4>
+
+<pre><code>p.one {
+border-style: solid;
+border-width: 5px 20px; /* 5px top and bottom, 20px on the sides */
+}
+
+p.two {
+border-style: solid;
+border-width: 20px 5px; /* 20px top and bottom, 5px on the sides */
+}
+
+p.three {
+border-style: solid;
+border-width: 25px 10px 4px 35px; /* 25px top, 10px right, 4px bottom and 35px left */
+}</code></pre>
+
+<h3>CSS Border Color
+</h3>
+<pre><p>The <code>border-color</code> property is used to set the color of the four borders.
+The color can be set by:
+</p></pre>
+<ul>
+  <li>name - specify a color name, like "red"
+  </li>
+  <li>HEX - specify a HEX value, like "#ff0000"
+  </li>
+  <li>RGB - specify a RGB value, like "rgb(255,0,0)"
+</li>
+  <li>HSL - specify a HSL value, like "hsl(0, 100%, 50%)"
+  </li>
+  <li>transparent
+  </li>
+</ul>
+<p>Note: If <code>border-color</code> is not set, it inherits the color of the element.
+
+</p>
+<h4>Example
+</h4>
+<p>Demonstration of the different border colors:
+
+</p>
+<pre><code>p.one {
+border-style: solid;
+border-color: red;
+}
+
+p.two {
+border-style: solid;
+border-color: green;
+}
+
+p.three {
+border-style: dotted;
+border-color: blue;
+}</code></pre>
+
+<p>Result:
+
+</p>
+
+<p style="border-style: solid; border-color: red;">A solid red border</p>
+<p style="border-style: solid; border-color: green;">A solid green border</p>
+<p style="border-style: dotted; border-color: blue;">A dotted blue border</p>
+
+<h3>Specific Side Colors
+</h3>
+<p>The <code>border-color</code> property can have from one to four values (for the top border, right border, bottom border, and the left border). 
+
+</p>
+<h4>Example</h4>
+<pre><code>p.one {
+border-style: solid;
+border-color: red green blue yellow; /* red top, green right, blue bottom and yellow left */
+}</code></pre>
+
+<p style="border-style: solid; border-color: red green blue yellow;">A solid multicolor border</p>
 
 </section>
 
+<section id="topic_9" class="main-section">
+  <header>
+    CSS Margins
+  </header>
+  <p>Margins are used to create space around elements, outside of any defined borders.
+  </p>
+  <div style="margin: 70px; border: 1px solid #4CAF50;">This element has a margin of 70px.</div>
+<h3>CSS Margins
+</h3>
+<pre>The CSS <code>margin</code> properties are used to create space around elements, outside of any defined borders.
+
+With CSS, you have full control over the margins. There are properties for setting the margin for each side of an element (top, right, bottom, and left).</pre>
+
+<p>CSS has properties for specifying the margin for each side of an element:
+</p>
+
+<ul>
+  <li>margin-top
+  </li>
+  <li>margin-right
+  </li>
+  <li>margin-bottom
+  </li>
+  <li>margin-left
+  </li>
+</ul>
 
 
-
-
-      </section>
 
       <!-- add ID to the reference section , topic_#-->
       <section   class="main-section">
