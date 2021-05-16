@@ -27,7 +27,9 @@
         </a></li>
         <li><a class="nav-link" href="#topic_10">CSS Padding
         </a></li>
-        <li><a class="nav-link" href="#topic_11">Reference
+        <li><a class="nav-link" href="#topic_11">CSS Height and Width
+        </a></li>
+        <li><a class="nav-link" href="#topic_12">Reference
         </a></li>
       </ul>
     </nav>
@@ -901,7 +903,7 @@ margin-left: 80px;
 </p>
 <h2>CSS Padding</h2>
 <div style="padding: 70px; border: 1px solid #4CAF50;">This element has a padding of 70px.</div>
-</section>
+
 
 <h3>CSS Padding
 </h3>
@@ -953,6 +955,72 @@ padding-right: 30px;
 padding-bottom: 50px;
  padding-left: 80px;
 }</code></pre>
+
+</section>
+
+<section id="topic_11" class="main-section">
+
+<header>CSS Height and Width
+</header>
+
+<p>The CSS <code>height</code> and <code>width</code> properties are used to set the height and width of an element.
+</p>
+
+<div style=" height: 50px; width: 100%; border: 1px solid #4CAF50;">This element has a height of 50 pixels and a width of 100%.</div>
+
+<h3>CSS Setting height and width
+</h3>
+
+<pre><p>The <code>height</code> and <code>width</code> properties are used to set the height and width of an element.
+
+The height and width properties do not include padding, borders, or margins. It sets the height/width of the area inside the padding, border, and margin of the element.</p></pre>
+
+<h3>CSS height and width Values
+</h3>
+
+<p>The <code>height</code> and <code>width</code> properties may have the following values:
+</p>
+
+<ul>
+  <li><code>auto </code>- This is default. The browser calculates the height and width
+  </li>
+  <li><code>length </code>- Defines the height/width in px, cm etc.
+  </li>
+  <li><code>%</code> - Defines the height/width in percent of the containing block
+  </li>
+  <li><code>initial</code> - Sets the height/width to its default value
+  </li>
+  <li><code>inherit</code> - The height/width will be inherited from its parent value
+  </li>
+</ul>
+
+<h3>CSS height and width Examples
+</h3>
+
+<div style="height: 200px; width: 50%; background-color: powderblue;">This div element has a height of 200px and a width of 50%.</div>
+
+<h4>Example</h4>
+<p>Set the height and width of a &lt;div&gt; element:<br/><br/>
+</p>
+<pre><code>div {
+height: 200px;
+width: 50%;
+background-color: powderblue;
+}</code></pre>
+
+<div style="height: 100px; width: 500px; background-color: powderblue;">This div element has a height of 100px and a width of 500px.</div>
+
+<h4>Example</h4>
+<p>Set the height and width of another &lt;div&gt; element:<br/><br/>
+</p>
+<pre><code>div {
+height: 100px;
+width: 500px;
+background-color: powderblue;
+}</code></pre>
+
+<p>Note: Remember that the <code>height</code> and <code>width</code> properties do not include padding, borders, or margins! They set the height/width of the area inside the padding, border, and margin of the element!</p>
+</section>
 
       <!-- add ID to the reference section , topic_#-->
       <section   class="main-section">
