@@ -32,20 +32,45 @@ header {
 .nav-link {
   text-decoration: none;
 }
+.example-div {
+  padding: 8px 16px;
+  background-color: #e7e9eb;
+  border-radius: 5px;
+  
+  
+}
+
+.code-div {
+  border-left: 4px solid #04aa6d;
+  background-color: white;
+  background-color: #fff;
+  width: auto;
+  padding: 8px 12px;
+}
+
+
+
+/*img {
+  width: 100%;
+  height: auto;
+}*/
+
+p {
+  white-space: normal;
+  word-wrap: break-word;
+}
+pre {
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+
 
 code {
   font-family: Consolas, "courier new";
   color: crimson;
-  background-color: #f1f1f1;
   padding: 2px;
-  font-size: 105%;
 }
-
-/* code div or something {
-  border-left: 4px solid #04AA6D;
-
-  background-color: lightgrey;
-} */
 
 @media only screen and (max-width: 815px) {
   #navbar ul {
@@ -67,6 +92,11 @@ code {
 
   #navbar ul li:last-child {
     border: none;
+  }
+
+  #css-rule-syntax {
+    width: 100%;
+    height: auto;
   }
 }
 

@@ -31,11 +31,14 @@
         </a></li>
         <li><a class="nav-link" href="#topic_12">CSS Box Model
         </a></li>
-        <li><a class="nav-link" href="#topic_11">Reference
+        <li><a class="nav-link" href="#topic_13">Reference
         </a></li>
       </ul>
     </nav>
     <main id="main-doc">
+
+      <!-- Section #1 -->
+
       <section id="topic_1" class="main-section">
         <header>CSS Introduction</header>
         <p>CSS is the language we use to style a Web page.</p>
@@ -59,21 +62,31 @@
           layout and variations in display for different devices and screen
           sizes.
         </p>
-        <h4>CSS Example</h4>
-        <pre>
-          <code>
+
+        <div class="example-div">
+          <h4>CSS Example</h4>
+          <pre>
+<div class="code-div"><code>
 body {
- background-color: lightblue;
-}
+    background-color: lightblue;
+  }
+
 h1 {
- color: white;
- text-align: center;
-}
-p{
- font-family: verdana;
- font-size: 20px;
-}
-</code></pre>
+  color: white;
+  text-align: center;
+  }
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+  }
+</code></div></pre>
+</div>
+        
+        
+
+
+
 
         <h3>CSS Solved a Big Problem</h3>
         <p>
@@ -100,12 +113,15 @@ p{
           website by changing just one file!
         </p>
       </section>
+
+      <!-- Section #2 -->
+
       <section id="topic_2" class="main-section">
         <header>CSS Syntax</header>
         <p>
           A CSS rule consists of a selector and a declaration block..
         </p>
-        <img src="https://www.w3schools.com/css/img_selector.gif" alt="CSS Syntax Form">
+        <img id="css-rule-syntax" src="https://www.w3schools.com/css/img_selector.gif" alt="CSS Syntax Form">
         <pre><p>
           The selector points to the HTML element you want to style.
 
@@ -115,14 +131,18 @@ p{
           
           Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces.</pre>
         </p>
-        <h4>Example</h4>
-        <p>In this example all &lt;p&gt; elements will be center-aligned, with a red text color:<br/><br/></p>
-<pre>
-<code>p {
+        <div class="example-div">
+          <h4>Example</h4>
+          <p>In this example all &lt;p&gt; elements will be center-aligned, with a red text color:</p>
+          <pre>
+<div class="code-div"><code>
+p {
   color: red;
   text-align: center;
-  }</code>
-</pre>
+  }
+</code></div></pre>
+</div>
+
 <h4>Example Explained
 </h4>
         <ul>
@@ -130,6 +150,8 @@ p{
           <li><code>color</code> is a property, and <code>red</code> is the property value</li>
           <li><code>text-align</code> is a property, and <code>center</code> is the property value</li>
         </ul>
+
+        <!-- Section #3 -->
 
       </section>
       <section id="topic_3" class="main-section">
@@ -162,16 +184,22 @@ We can divide CSS selectors into five categories:</pre>
         <p>
         The element selector selects HTML elements based on the element name.
         </p>
-        <h4>Example</h4>
-        <p>Here, all &lt;p&gt; elements on the page will be center-aligned, with a red text color:</p>
-<pre>
-<code>p {
+
+        <div class="example-div">
+          <h4>Example</h4>
+          <p>Here, all &lt;p&gt; elements on the page will be center-aligned, with a red text color:</p>
+          <pre>
+<div class="code-div"><code>
+p {
   color: red;
   text-align: center;
-}</code>
-</pre>
+  }
+</code></div></pre>
+</div>
 
-       <h3>The CSS id Selector
+        
+        
+      <h3>The CSS id Selector
       </h3>
       <pre><p>
 The id selector uses the id attribute of an HTML element to select a specific element.
@@ -181,16 +209,25 @@ The id of an element is unique within a page, so the id selector is used to sele
 To select an element with a specific id, write a hash (#) character, followed by the id of the element.
       </p>
       </pre>
-      <h4>Example</h4>
+
+      <div class="example-div">
+        <h4>Example</h4>
         <p>The CSS rule below will be applied to the HTML element with id=&quot;para1&quot;:</p>
-<pre>
-<code>#para1 {
- text-align: center;
- color: red;
-}</code>
-</pre>
+        <pre>
+<div class="code-div"><code>
+#para1 {
+  text-align: center;
+  color: red;
+  }
+</code></div></pre>
 <p>Note: An id name cannot start with a number!
 </p>
+</div>
+
+      
+        
+
+
 
 <h3>The CSS class Selector</h3>
 <pre><p>
@@ -200,50 +237,72 @@ To select elements with a specific class, write a period (.) character, followed
 </p>
 </pre>
 
-<h4>Example</h4>
-        <p>In this example all HTML elements with class=&quot;center&quot; will be red and center-aligned:</p>
-<pre>
-<code>.center {
- text-align: center;
- color: red;
-}
-</code>
-</pre>
+<div class="example-div">
+  <h4>Example</h4>
+  <p>In this example all HTML elements with class=&quot;center&quot; will be red and center-aligned:</p>
+  <pre>
+<div class="code-div"><code>
+.center {
+  text-align: center;
+  color: red;
+  }
+</code></div></pre>
+</div>
+
 <p>You can also specify that only specific HTML elements should be affected by a class.
 </p>
-<h4>Example</h4>
-        <p>In this example only &lt;p&gt; elements with class=&quot;center&quot; will be red and center-aligned:</p>
-<pre>
-<code>p.center {
- text-align: center;
- color: red;
-}
-</code>
-</pre>
+        
+
+<div class="example-div">
+  <h4>Example</h4>
+  <p>In this example only &lt;p&gt; elements with class=&quot;center&quot; will be red and center-aligned:</p>
+  <pre>
+<div class="code-div"><code>
+p.center {
+  text-align: center;
+  color: red;
+  }
+</code></div></pre>
+</div>
+
 <p>HTML elements can also refer to more than one class.
 </p>
-<h4>Example</h4>
-        <p>In this example the &lt;p&gt; element will be styled according to class=&quot;center&quot; and to class=&quot;large&quot;:</p>
-<pre>
-<code>&lt;p class=&quot;center large&quot;&gt;This paragraph refers to two classes.&lt;/p&gt;
-</code>
-</pre>
+
+<div class="example-div">
+  <h4>Example</h4>
+  <p>In this example the &lt;p&gt; element will be styled according to class=&quot;center&quot; and to class=&quot;large&quot;:</p>
+<div class="code-div"><code>
+&lt;p class=&quot;center large&quot;&gt;This paragraph refers to two classes.&lt;/p&gt;
+</code></div>
 <p>Note: A class name cannot start with a number!
 </p>
+</div>
+
+
+
+        
+
+
 
 <h3>The CSS Universal Selector</h3>
 <p>The universal selector (*) selects all HTML elements on the page.
-
 </p>
-<h4>Example</h4>
-        <p>The CSS rule below will affect every HTML element on the page: </p>
-<pre>
-<code>* {
- text-align: center;
- color: blue;
-}
-</code>
-</pre>
+
+<div class="example-div">
+  <h4>Example</h4>
+  <p>The CSS rule below will affect every HTML element on the page: </p>
+  <pre>
+<div class="code-div"><code>
+* {
+  text-align: center;
+  color: blue;
+  }
+</code></div></pre>
+</div>
+
+
+        
+
 
 <h3>The CSS Grouping Selector
 </h3>
@@ -253,46 +312,51 @@ The grouping selector selects all the HTML elements with the same style definiti
 Look at the following CSS code (the h1, h2, and p elements have the same style definitions):
 </p>
 </pre>
-<pre><code>
+
+<div class="example-div">
+  <pre>
+<div class="code-div"><code>
 h1 {
   text-align: center;
   color: red;
-}
+  }
   
 h2 {
   text-align: center;
   color: red;
-}
+  }
   
 p {
   text-align: center;
   color: red;
-}
-</code>
-</pre>
+  }
+</code></div></pre>
+</div>
+
+
+
 <pre><p>
 It will be better to group the selectors, to minimize the code.
 
 To group selectors, separate each selector with a comma.
 </p>
 </pre>
-<h4>Example</h4>
-        <p>IIn this example we have grouped the selectors from the code above: 
 
-        </p>
-<pre>
-<code>h1, h2, p {
+<div class="example-div">
+  <h4>Example</h4>
+  <p>In this example we have grouped the selectors from the code above: 
+  </p>
+  <pre>
+<div class="code-div"><code>
+h1, h2, p {
   text-align: center;
   color: red;
-}
-</code>
-</pre>
+  }
+</code></div></pre>
+</div>
 
 
-
-
-        
-
+      <!-- Section #4 -->
       </section>
       <section id="topic_4" class="main-section">
         <header>How To Add CSS
@@ -323,14 +387,29 @@ Each HTML page must include a reference to the external style sheet file inside 
         </p>
         </pre>
         
-        <h4>Example</h4>
-        <p>External styles are defined within the &lt;link&gt; element, inside the &lt;head&gt; section of an HTML page: 
-        </p>
-<pre>
-<code>&lt;!DOCTYPE html&gt;<br/>&lt;html&gt;<br/>&lt;head&gt;<br/>&lt;link rel=&quot;stylesheet&quot; href=&quot;mystyle.css&quot;&gt;<br/>&lt;/head&gt;<br/>&lt;body&gt;<br/><br/>&lt;h1&gt;This is a heading&lt;/h1&gt;<br/>&lt;p&gt;This is a paragraph.&lt;/p&gt;<br/><br/>&lt;/body&gt;<br/>&lt;/html&gt;
-</code>
-</pre>
+        <div class="example-div">
+          <h4>Example</h4>
+          <p>External styles are defined within the &lt;link&gt; element, inside the &lt;head&gt; section of an HTML page: 
+          </p>
+          <pre>
+        <div class="code-div"><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;mystyle.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
 
+&lt;h1&gt;This is a heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+        </code></div></pre>
+        </div>
+
+        
+        
 <pre><p>
 An external style sheet can be written in any text editor, and must be saved with a .css extension.
 
@@ -338,21 +417,29 @@ The external .css file should not contain any HTML tags.
 
 Here is how the "mystyle.css" file looks:
 </p>
-<h4>"mystyle.css"</h4>
-<pre><code>
-  body {
-    background-color: lightblue;
-  }
-  
-  h1 {
-    color: navy;
-    margin-left: 20px;
-  }
-</code></pre>
-</pre>
 
+<div class="example-div">
+  <h4>"mystyle.css"</h4>
+  <p>In this example we have grouped the selectors from the code above: 
+  </p>
+  <pre>
+<div class="code-div"><code>
+body {
+  background-color: lightblue;
+  }
+
+h1 {
+  color: navy;
+  margin-left: 20px;
+  }
+</code></div></pre>
 <p>Note: Do not add a space between the property value and the unit (such as margin-left: 20 px;). The correct way is: margin-left: 20px;
 </p>
+</div>
+
+
+
+
 
 <h3>Internal CSS
 </h3>
@@ -363,13 +450,42 @@ An internal style sheet may be used if one single HTML page has a unique style.
 The internal style is defined inside the &lt;style&gt; element, inside the head section.
 </p></pre>
 
-<h4>Example</h4>
+<div class="example-div">
+  <h4>Example</h4>
+  <p>External styles are defined within the &lt;link&gt; element, inside the &lt;head&gt; section of an HTML page: 
+  </p>
+  <pre>
+<div class="code-div"><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+body {
+    background-color: linen;
+  }
+  
+  h1 {
+      color: maroon;
+        margin-left: 40px;
+        
+        &lt;/style&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+        
+        &lt;h1&gt;This is a heading&lt;/h1&gt;
+        &lt;p&gt;This is a paragraph.&lt;/p&gt;
+        
+        &lt;/body&gt;
+        &lt;/html&gt;
+</code></div></pre>
 <p>Internal styles are defined within the &lt;style&gt; element, inside the &lt;head&gt; section of an HTML page:
 </p>
+</div>
 
-<pre><code>
-&lt;!DOCTYPE html&gt;<br/>&lt;html&gt;<br/>&lt;head&gt;<br/>&lt;style&gt;<br/>body {<br/>  background-color: linen;<br/>}<br/><br/>h1 {<br/>  color: maroon;<br/>  margin-left: 40px;<br/>}<br/>&lt;/style&gt;<br/>&lt;/head&gt;<br/>&lt;body&gt;<br/><br/>&lt;h1&gt;This is a heading&lt;/h1&gt;<br/>&lt;p&gt;This is a paragraph.&lt;/p&gt;<br/><br/>&lt;/body&gt;<br/>&lt;/html&gt;
-</code></pre>
+
+
+
+
 
 <h3>Inline CSS
 </h3>
@@ -380,16 +496,28 @@ An inline style may be used to apply a unique style for a single element.
 To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property.
 </p></pre>
 
-<h4>Example</h4>
+
+<div class="example-div">
+  <h4>Example</h4>
 <p>Inline styles are defined within the "style" attribute of the relevant element:
 </p>
+  <pre>
+<div class="code-div"><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
 
-<pre><code>
-&lt;!DOCTYPE html&gt;<br/>&lt;html&gt;<br/>&lt;body&gt;<br/><br/>&lt;h1 style=&quot;color:blue;text-align:center;&quot;&gt;This is a heading&lt;/h1&gt;<br/>&lt;p style=&quot;color:red;&quot;&gt;This is a paragraph.&lt;/p&gt;<br/><br/>&lt;/body&gt;<br/>&lt;/html&gt;
-</code></pre>
+&lt;h1 style=&quot;color:blue;text-align:center;&quot;&gt;This is a heading&lt;/h1&gt;
+&lt;p style=&quot;color:red;&quot;&gt;This is a paragraph.&lt;/p&gt;
 
+&lt;/body&gt;
+&lt;/html&gt;
+</code></div></pre>
 <p>Tip: An inline style loses many of the advantages of a style sheet (by mixing content with presentation). Use this method sparingly.
 </p>
+</div>
+
+
 
 <h3>Multiple Style Sheets
 </h3>
@@ -398,20 +526,64 @@ To use inline styles, add the style attribute to the relevant element. The style
 </p>
 
 <p>Assume that an external style sheet has the following style for the &lt;h1&gt; element:<br/><br/></p>
-<pre><code>h1 {
+<div class="example-div">
+  
+  <pre>
+<div class="code-div"><code>
+h1 {
   color: navy;
-}</code></pre>
+  }
+</code></div></pre>
+<p>Tip: An inline style loses many of the advantages of a style sheet (by mixing content with presentation). Use this method sparingly.
+</p>
+</div>
+
 <p>Then, assume that an internal style sheet also has the following style for the &lt;h1&gt; element:<br/><br/></p>
-<pre><code>h1 {
+<div class="example-div">
+  
+  <pre>
+<div class="code-div"><code>
+h1 {
   color: orange;   
-}</code></pre>
-<h4>Example</h4>
+  }
+</code></div></pre>
+<p>Tip: An inline style loses many of the advantages of a style sheet (by mixing content with presentation). Use this method sparingly.
+</p>
+</div>
+
+<div class="example-div">
+  <h4>Example</h4>
 <p>If the internal style is defined after the link to the external style sheet, the &lt;h1&gt; elements will be &quot;orange&quot;:<br/><br/></p>
-<pre><code>&lt;head&gt;<br/>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;mystyle.css&quot;&gt;<br/>&lt;style&gt;<br/>h1 {<br/>  color: orange;<br/>}<br/>&lt;/style&gt;<br/>&lt;/head&gt;</code></pre>
-    
-<h4>Example</h4>
+  <pre>
+<div class="code-div"><code>
+&lt;head&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;mystyle.css&quot;&gt;
+&lt;style&gt;
+h1 {
+    color: orange;
+  }
+  &lt;/style&gt;
+  &lt;/head&gt;
+</code></div></pre>
+</div>
+
+
+<div class="example-div">
+  <h4>Example</h4>
 <p>However, if the internal style is defined before the link to the external style sheet, the &lt;h1&gt; elements will be &quot;navy&quot;: <br/><br/></p>
-<pre><code>&lt;head&gt;<br/>&lt;style&gt;<br/>h1 {<br/>  color: orange;<br/>}<br/>&lt;/style&gt;<br/>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;mystyle.css&quot;&gt;<br/>&lt;/head&gt;</code></pre>
+  <pre>
+<div class="code-div"><code>
+&lt;head&gt;
+&lt;style&gt;
+h1 {
+    color: orange;
+}
+&lt;/style&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;mystyle.css&quot;&gt;
+&lt;/head&gt;
+</code></div></pre>
+</div>
+    
 
 
 <h3>Cascading Order
@@ -442,6 +614,7 @@ All the styles in a page will "cascade" into a new "virtual" style sheet by the 
 
 
 
+      <!-- Section #5 -->
 
       </section>
       <section id="topic_5" class="main-section">
@@ -461,33 +634,54 @@ All the styles in a page will "cascade" into a new "virtual" style sheet by the 
         </p>
       </pre>
 
-      <h4>Example</h4>
-      <pre><code>
+
+      <div class="example-div">
+        <h4>Example</h4>
+        <pre>
+      <div class="code-div"><code>
 /* This is a single-line comment */
 p {
   color: red;
-}</code></pre>
+  }
+      </code></div></pre>
+      </div>
 
-    
+      
       <p>You can add comments wherever you want in the code:
       </p>
-      <h4>Example</h4>
-      <pre><code>
+
+      <div class="example-div">
+        <h4>Example</h4>
+        <pre>
+      <div class="code-div"><code>
 p {
-color: red;  /* Set text color to red */
-}</code></pre>
+  color: red;  /* Set text color to red */
+  }
+      </code></div></pre>
+      </div>
+
       <p>Comments can also span multiple lines: 
       </p>
-      <h4>Example</h4> 
-      <pre><code>
+
+      <div class="example-div">
+        <h4>Example</h4>
+        <pre>
+      <div class="code-div"><code>
 /* This is
 a multi-line
 comment */
 
 p {
   color: red;
-}</code></pre>
+  }
+      </code></div></pre>
+      </div>
+
+       
       </section>
+
+
+            <!-- Section #6 -->
 
       <section id="topic_6" class="main-section">
         <header>CSS Colors
@@ -523,10 +717,19 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
 Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
 </p>
 
-<h4>Example</h4>
-<pre><code>
-&lt;h1 style=&quot;background-color:DodgerBlue;&quot;&gt;Hello World&lt;/h1&gt;<br/>&lt;p style=&quot;background-color:Tomato;&quot;&gt;Lorem ipsum...&lt;/p&gt;
-</code></pre>
+
+<div class="example-div">
+  <h4>Example</h4>
+  <pre>
+<div class="code-div"><code>
+&lt;h1 style=&quot;background-color:DodgerBlue;&quot;&gt;Hello World&lt;/h1&gt;
+&lt;p style=&quot;background-color:Tomato;&quot;&gt;Lorem ipsum...&lt;/p&gt;
+</code></div></pre>
+</div>
+
+
+
+
 
 <h3>CSS Text Color
 </h3>
@@ -539,10 +742,18 @@ Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lo
 
 <p style="color:MediumSeaGreen;">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
 
-<h4>Example</h4>
-<code>
-  &lt;h1 style=&quot;color:Tomato;&quot;&gt;Hello World&lt;/h1&gt;<br/>&lt;p style=&quot;color:DodgerBlue;&quot;&gt;Lorem ipsum...&lt;/p&gt;<br/>&lt;p style=&quot;color:MediumSeaGreen;&quot;&gt;Ut wisi enim...&lt;/p&gt;
-</code>
+<div class="example-div">
+  <h4>Example</h4>
+  <pre>
+<div class="code-div"><code>
+&lt;h1 style=&quot;color:Tomato;&quot;&gt;Hello World&lt;/h1&gt;
+&lt;p style=&quot;color:DodgerBlue;&quot;&gt;Lorem ipsum...&lt;/p&gt;
+&lt;p style=&quot;color:MediumSeaGreen;&quot;&gt;Ut wisi enim...&lt;/p&gt;
+</code></div></pre>
+</div>
+
+
+
 
 <h3>CSS Border Color
 </h3>
@@ -556,10 +767,18 @@ Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lo
 
 <h1 style="border: 2px solid Violet;">Hello World</h1>
 
-<h4>Example</h4>
-<code>
-  &lt;h1 style=&quot;border:2px solid Tomato;&quot;&gt;Hello World&lt;/h1&gt;<br/>&lt;h1 style=&quot;border:2px solid DodgerBlue;&quot;&gt;Hello World&lt;/h1&gt;<br/>&lt;h1 style=&quot;border:2px solid Violet;&quot;&gt;Hello World&lt;/h1&gt;
-</code>
+<div class="example-div">
+  <h4>Example</h4>
+  <pre>
+<div class="code-div"><code>
+&lt;h1 style=&quot;border:2px solid Tomato;&quot;&gt;Hello World&lt;/h1&gt;
+&lt;h1 style=&quot;border:2px solid DodgerBlue;&quot;&gt;Hello World&lt;/h1&gt;
+&lt;h1 style=&quot;border:2px solid Violet;&quot;&gt;Hello World&lt;/h1&gt;
+</code></div></pre>
+</div>
+
+
+
 
 <h3>CSS Color Values
 </h3>
@@ -579,11 +798,24 @@ Same as color name "Tomato":
 
 <p>In addition to the predefined color names, colors can be specified using RGB, HEX, HSL, or even transparent colors using RGBA or HSLA color values.</p>
 
-<h4>Example</h4>
-<code>
-  &lt;h1 style=&quot;background-color:rgb(255, 99, 71);&quot;&gt;...&lt;/h1&gt;<br/>&lt;h1 style=&quot;background-color:#ff6347;&quot;&gt;...&lt;/h1&gt;<br/>&lt;h1 style=&quot;background-color:hsl(9, 100%, 64%);&quot;&gt;...&lt;/h1&gt;<br/><br/>&lt;h1 style=&quot;background-color:rgba(255, 99, 71, 0.5);&quot;&gt;...&lt;/h1&gt;<br/>&lt;h1 style=&quot;background-color:hsla(9, 100%, 64%, 0.5);&quot;&gt;...&lt;/h1&gt;
-</code>
+<div class="example-div">
+  <h4>Example</h4>
+  <pre>
+<div class="code-div"><code>
+&lt;h1 style=&quot;background-color:rgb(255, 99, 71);&quot;&gt;...&lt;/h1&gt;
+&lt;h1 style=&quot;background-color:#ff6347;&quot;&gt;...&lt;/h1&gt;
+&lt;h1 style=&quot;background-color:hsl(9, 100%, 64%);&quot;&gt;...&lt;/h1&gt;
+  
+&lt;h1 style=&quot;background-color:rgba(255, 99, 71, 0.5);&quot;&gt;...&lt;/h1&gt;
+&lt;h1 style=&quot;background-color:hsla(9, 100%, 64%, 0.5);&quot;&gt;...&lt;/h1&gt;
+</code></div></pre>
+</div>
+
+
+
       </section>
+
+      <!-- Section #7 -->
 
       <section id="topic_7" class="main-section">
 <header>CSS Backgrounds
@@ -598,15 +830,19 @@ Same as color name "Tomato":
 <p>The <code>background-color</code> property specifies the background color of an element.
 </p>
 
-<h4>Example</h4>
-<p>The background color of a page is set like this:
-
-</p>
-<pre><code>
+<div class="example-div">
+  <h4>Example</h4>
+  <p>The background color of a page is set like this:
+  </p>
+  <pre>
+<div class="code-div"><code>
 body {
   background-color: lightblue;
-}
-</code></pre>
+  }
+</code></div></pre>
+</div>
+
+
 <p>With CSS, a color is most often specified by:</p>
 <ul>
   <li>a valid color name - like "red"
@@ -626,26 +862,40 @@ The <code>background-image</code> property specifies an image to use as the back
 By default, the image is repeated so it covers the entire element.
 </p></pre>
 
-<h4>Example</h4>
-<p>Set the background image for a page: 
-</p>
-<pre><code>
+<div class="example-div">
+  <h4>Example</h4>
+  <p>Set the background image for a page: 
+  </p>
+  <pre>
+<div class="code-div"><code>
 body {
   background-image: url("paper.gif");
-}
-</code></pre>
+  }
+</code></div></pre>
+</div>
+
+
 
 <p>The background image can also be set for specific elements, like the <p> element:
 
 </p>
-<h3>Example</h3>
-<pre>
-<code>p {
+
+<div class="example-div">
+  <h4>Example</h4>
+  <p>Set the background image for a page: 
+  </p>
+  <pre>
+<div class="code-div"><code>
+p {
   background-image: url("paper.gif");
-}
-</code></pre>
+  }
+</code></div></pre>
+</div>
+
 
 </section>
+
+      <!-- Section #8 -->
 
 <section id="topic_8" class="main-section">
   <header>
@@ -671,15 +921,17 @@ body {
     <li><code>none</code> - Defines no border</li>
     <li><code>hidden</code> - Defines a hidden border</li>
 
-    <p>The <code>border-style</code> property can have from one to four values (for the top border, right border, bottom border, and the left border).
+<p>The <code>border-style</code> property can have from one to four values 
+(for the top border, right border, bottom border, and the left border).
+</p>
 
-    </p>
-
-    <h4>Example</h4>
-    <p>Demonstration of the different border styles:
-    </p>
-
-    <pre><code>p.dotted {border-style: dotted;}
+    <div class="example-div">
+      <h4>Example</h4>
+      <p>Demonstration of the different border styles:
+      </p>
+      <pre>
+    <div class="code-div"><code>
+p.dotted {border-style: dotted;}
 p.dashed {border-style: dashed;}
 p.solid {border-style: solid;}
 p.double {border-style: double;}
@@ -690,8 +942,10 @@ p.outset {border-style: outset;}
 p.none {border-style: none;}
 p.hidden {border-style: hidden;}
 p.mix {border-style: dotted dashed solid double;}
-</code></pre>
+    </code></div></pre>
+    </div>
 
+   
 <p>Result:
 </p>
 <p style="border-style: dotted;">A dotted border.</p>
@@ -705,8 +959,7 @@ p.mix {border-style: dotted dashed solid double;}
 <p style="border-style: none;">No border.</p>
 <p style="border-style: hidden;">A hidden border.</p>
 <p style="border-style: dotted dashed solid double;">A mixed border.</p>
-  </ul>
-</pre>
+
 
 <h3>CSS Border Width
 </h3>
@@ -716,28 +969,35 @@ p.mix {border-style: dotted dashed solid double;}
 The width can be set as a specific size (in px, pt, cm, em, etc) or by using one of the three pre-defined values: thin, medium, or thick:
 </p><pre>
 
-  <h4>Example</h4>
-  <p>Demonstration of the different border widths:
-  </p>
-  <pre><code>p.one {
-border-style: solid;
-border-width: 5px;
-}
-  
+
+  <div class="example-div">
+    <h4>Example</h4>
+    <p>Demonstration of the different border widths:
+    </p>
+    <pre>
+  <div class="code-div"><code>
+p.one {
+  border-style: solid;
+  border-width: 5px;
+  }
+    
 p.two {
-border-style: solid;
-border-width: medium;
-}
-  
+  border-style: solid;
+  border-width: medium;
+  }
+    
 p.three {
-border-style: dotted;
-border-width: 2px;
-}
-  
-  p.four {
-border-style: dotted;
-border-width: thick;
-}</code></pre>
+  border-style: dotted;
+  border-width: 2px;
+  }
+    
+p.four {
+  border-style: dotted;
+  border-width: thick;
+  }
+  </code></div></pre>
+  </div>
+
  <p>Result:
 </p>
 
@@ -754,22 +1014,34 @@ border-width: thick;
 <p>The <code>border-width</code> property can have from one to four values (for the top border, right border, bottom border, and the left border):
 </p>
 
-<h4>Example</h4>
-
-<pre><code>p.one {
-border-style: solid;
-border-width: 5px 20px; /* 5px top and bottom, 20px on the sides */
-}
-
+<div class="example-div">
+  <h4>Example</h4>
+  <pre>
+<div class="code-div"><code>
+p.one {
+  border-style: solid;
+  border-width: 5px 20px; /* 5px top and bottom, 20px on the sides */
+  }
+  
 p.two {
-border-style: solid;
-border-width: 20px 5px; /* 20px top and bottom, 5px on the sides */
-}
-
+  border-style: solid;
+  border-width: 20px 5px; /* 20px top and bottom, 5px on the sides */
+  }
+  
 p.three {
-border-style: solid;
-border-width: 25px 10px 4px 35px; /* 25px top, 10px right, 4px bottom and 35px left */
-}</code></pre>
+  border-style: solid;
+  border-width: 25px 10px 4px 35px; /* 25px top, 10px right, 4px bottom and 35px left */
+  }
+</code></div></pre>
+</div>
+
+
+
+
+
+
+
+
 
 <h3>CSS Border Color
 </h3>
@@ -791,25 +1063,31 @@ The color can be set by:
 <p>Note: If <code>border-color</code> is not set, it inherits the color of the element.
 
 </p>
-<h4>Example
-</h4>
-<p>Demonstration of the different border colors:
 
-</p>
-<pre><code>p.one {
-border-style: solid;
-border-color: red;
-}
 
+<div class="example-div">
+  <h4>Example</h4>
+  <p>Demonstration of the different border colors:
+  </p>
+  <pre>
+<div class="code-div"><code>
+p.one {
+  border-style: solid;
+  border-color: red;
+  }
+  
 p.two {
-border-style: solid;
-border-color: green;
-}
-
+  border-style: solid;
+  border-color: green;
+  }
+  
 p.three {
-border-style: dotted;
-border-color: blue;
-}</code></pre>
+  border-style: dotted;
+  border-color: blue;
+ }
+</code></div></pre>
+</div>
+
 
 <p>Result:
 
@@ -824,15 +1102,24 @@ border-color: blue;
 <p>The <code>border-color</code> property can have from one to four values (for the top border, right border, bottom border, and the left border). 
 
 </p>
-<h4>Example</h4>
-<pre><code>p.one {
-border-style: solid;
-border-color: red green blue yellow; /* red top, green right, blue bottom and yellow left */
-}</code></pre>
+
+<div class="example-div">
+  <h4>Example</h4>
+  <pre>
+<div class="code-div"><code>
+p.one {
+  border-style: solid;
+  border-color: red green blue yellow; /* red top, green right, blue bottom and yellow left */
+  }
+</code></div></pre>
+</div>
 
 <p style="border-style: solid; border-color: red green blue yellow;">A solid multicolor border</p>
 
+
 </section>
+
+      <!-- Section #9 -->
 
 <section id="topic_9" class="main-section">
   <header>
@@ -884,17 +1171,27 @@ With CSS, you have full control over the margins. There are properties for setti
 
 </p>
 
-<h4>Example</h4>
-<p>Set different margins for all four sides of a &lt;p&gt; element:<br/><br/>
-</p>
-<pre><code>p {
-margin-top: 100px;
-margin-bottom: 100px;
-margin-right: 150px;
-margin-left: 80px;
-}</code></pre>
+<div class="example-div">
+  <h4>Example</h4>
+  <p>Set different margins for all four sides of a &lt;p&gt; element:<br/><br/>
+  </p>
+  <pre>
+<div class="code-div"><code>
+p {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+  }
+</code></div></pre>
+</div>
 
 
+
+
+
+
+      <!-- Section #10 -->
 
 
 <section id="topic_10" class="main-section">
@@ -910,7 +1207,7 @@ margin-left: 80px;
 <h3>CSS Padding
 </h3>
 
-<pre><code>The CSS <code>padding</code> properties are used to generate space around an element's content, inside of any defined borders.
+<pre>he CSS <code>padding</code> properties are used to generate space around an element's content, inside of any defined borders.
 
 With CSS, you have full control over the padding. 
 There are properties for setting the padding for each side of an element (top, right, bottom, and left).</code></pre>
@@ -948,18 +1245,28 @@ There are properties for setting the padding for each side of an element (top, r
 
 </p>
 
+<div class="example-div">
+  <h4>Example</h4>
+  <p>Set different padding for all four sides of a &lt;div&gt; element:  <br/><br/>
+  </p>
+  <pre>
+<div class="code-div"><code>
+div {
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+    padding-left: 80px;
+  }
+</code></div></pre>
+</div>
 
-<h4>Example</h4>
-<p>Set different padding for all four sides of a &lt;div&gt; element:  <br/><br/>
-</p>
-<pre><code>div {
-padding-top: 50px;
-padding-right: 30px;
-padding-bottom: 50px;
- padding-left: 80px;
-}</code></pre>
+
+
+
 
 </section>
+
+      <!-- Section #11 -->
 
 <section id="topic_11" class="main-section">
 
@@ -1000,30 +1307,50 @@ The height and width properties do not include padding, borders, or margins. It 
 <h3>CSS height and width Examples
 </h3>
 
-<div style="height: 200px; width: 50%; background-color: powderblue;">This div element has a height of 200px and a width of 50%.</div>
+<div style="height: 200px; width: 50%; background-color: powderblue; margin: 5%;">This div element has a height of 200px and a width of 50%.</div>
 
-<h4>Example</h4>
-<p>Set the height and width of a &lt;div&gt; element:<br/><br/>
-</p>
-<pre><code>div {
-height: 200px;
-width: 50%;
-background-color: powderblue;
-}</code></pre>
+<div class="example-div">
+  <h4>Example</h4>
+  <p>Set the height and width of a &lt;div&gt; element:<br/><br/>
+  </p>
+  <pre>
+<div class="code-div"><code>
+div {
+  height: 200px;
+  width: 50%;
+  background-color: powderblue;
+  }
+</code></div></pre>
+</div>
 
-<div style="height: 100px; width: 500px; background-color: powderblue;">This div element has a height of 100px and a width of 500px.</div>
 
-<h4>Example</h4>
-<p>Set the height and width of another &lt;div&gt; element:<br/><br/>
-</p>
-<pre><code>div {
-height: 100px;
-width: 500px;
-background-color: powderblue;
-}</code></pre>
 
+<div  style="height: 100px; width: 250px; background-color: powderblue; margin: 5%;">This div element has a height of 100px and a width of 250px.</div>
+
+
+<div class="example-div">
+  <h4>Example</h4>
+  <p>Set the height and width of another &lt;div&gt; element:<br/><br/>
+  </p>
+  <pre>
+<div class="code-div"><code>
+div {
+  height: 100px;
+  width: 250px;
+  background-color: powderblue;
+  }
+</code></div></pre>
 <p>Note: Remember that the <code>height</code> and <code>width</code> properties do not include padding, borders, or margins! They set the height/width of the area inside the padding, border, and margin of the element!</p>
+</div>
+
+
+
+
+
+
 </section>
+
+      <!-- Section #12 -->
 
 <section id="topic_12" class="main-section">
 
@@ -1040,7 +1367,7 @@ background-color: powderblue;
   
   The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content. The image below illustrates the box model:</p></pre>
   
-  <img src="./images/box-model.PNG" alt="CSS box model illustration">
+  <img style="width: 100%; height: auto;" src="./images/box-model.PNG" alt="CSS box model illustration" >
   
   <p>Explanation of the different parts:
   </p>
@@ -1059,18 +1386,22 @@ background-color: powderblue;
   <p>The box model allows us to add a border around elements, and to define space between elements. 
   </p>
   
-  <h4>Example</h4>
-  
-  <p>Demonstration of the box model:
-  </p>
-  
-  <pre><code>div {
+  <div class="example-div">
+    <h4>Example</h4>
+    <p>Demonstration of the box model:
+    </p>
+    <pre>
+  <div class="code-div"><code>
+div {
   width: 300px;
   border: 15px solid green;
   padding: 50px;
   margin: 20px;
-  }</code></pre>
-  
+  }
+  </code></div></pre>
+  </div>
+
+   
   <h3>Width and Height of an Element
   </h3>
   <p>In order to set the width and height of an element correctly in all browsers, you need to know how the box model works.
@@ -1079,28 +1410,34 @@ background-color: powderblue;
   
   <p>Important: When you set the width and height properties of an element with CSS, you just set the width and height of the content area. To calculate the full size of an element, you must also add padding, borders and margins.</p>
   
-  <h4>Example</h4>
-  <p>This &lt;div&gt; element will have a total width of 350px: <br/><br/></p>
-  <pre><code>div {
+  <div class="example-div">
+    <h4>Example</h4>
+<p>This &lt;div&gt; element will have a total width of 350px:</p>
+    <pre>
+  <div class="code-div"><code>
+div {
   width: 320px;
   padding: 10px;
   border: 5px solid gray;
   margin: 0;
-  }</code></pre>
-  
+  }
+</code></div></pre>
+  </div>
+
+
   <h2>Calculate the total width:</h2>
-  
-  <img src="https://www.w3schools.com/css/klematis4_big.jpg" width="350px" height="263px" alt="Klematis Flowers">
-  <div style="width:320px; padding: 10px; border: 5px solid gray; margin: 0;">The picture above is 350px wide. The total width of this element is also 350px.</div>
-  
+
+  <img src="https://www.w3schools.com/css/klematis4_big.jpg" width="250px" height="263px" alt="Klematis Flowers">
+  <div style="width:220px; padding: 10px; border: 5px solid gray; margin: 0;">The picture above is 250px wide. The total width of this element is also 250px.</div>
+
   <p>Here is the calculation:
   </p>
   
-  <pre><p>320px (width)
+  <pre><p>220px (width)
   + 20px (left + right padding)
   + 10px (left + right border)
   + 0px (left + right margin)
-  = 350px</p></pre>
+  = 250px</p></pre>
   
   <pre><p>The total width of an element should be calculated like this:
   
@@ -1112,9 +1449,9 @@ background-color: powderblue;
   
   </section>
 
+      <!-- Section #13 -->
 
-      <!-- add ID to the reference section , topic_#-->
-      <section   class="main-section">
+      <section  id="topic_13" class="main-section">
         <header>Reference
         </header>
         <ul>
